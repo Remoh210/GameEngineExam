@@ -329,7 +329,7 @@ int main(void)
 	//loadModels("Models.txt", vec_pObjectsToDraw);
 	loadLights("lights.txt", LightManager->vecLights);
 	loadCameraInfo("camera.txt");
-	//HACK; TODO save and load camera look at
+	//TODO save and load camera look at
 	//camera.b_controlledByScript = true;
 	//camera.SetViewMatrix(glm::lookAt(camera.Position, glm::vec3(285.0f, 245.0f, 825.0f), camera.WorldUp));
 	
@@ -831,12 +831,12 @@ void LoadTerrainAABB(void)
 	//	into the AABB thing.
 	// Where is the mesh (do the triangles need to be transformed)??
 
-	cMeshObject* pTerrain = findObjectByFriendlyName("terrain");
+	//cMeshObject* pTerrain = findObjectByFriendlyName("terrain");
 
-	sModelDrawInfo terrainMeshInfo;
-	terrainMeshInfo.meshFileName = pTerrain->meshName;
+	//sModelDrawInfo terrainMeshInfo;
+	//terrainMeshInfo.meshFileName = pTerrain->meshName;
 
-	::g_pTheVAOMeshManager->FindDrawInfoByModelName(terrainMeshInfo);
+	//::g_pTheVAOMeshManager->FindDrawInfoByModelName(terrainMeshInfo);
 
 
 	//// How big is our AABBs? Side length?

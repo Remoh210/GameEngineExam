@@ -146,7 +146,7 @@ void key_callback( GLFWwindow* window,
 
 		::p_LuaScripts->Update(deltaTime);
 
-		::p_LuaScripts->UpdateCG(deltaTime);
+		//::p_LuaScripts->UpdateCG(deltaTime);
 
 	}
 
@@ -257,16 +257,7 @@ bool AreAllModifiersUp(GLFWwindow* window)
 	if ( IsCtrlDown(window) )	{ return false;	} 
 	if ( IsAltDown(window) )	{ return false; }
 	// Yup, they are all UP
-	cMeshObject* player = findObjectByFriendlyName("Ufo2UVb");
 
-	//player->bIsUpdatedByPhysics = true;
-	if (glfwGetKey(window, GLFW_KEY_UP)) { 
-		
-		player->accel += camera.Front * 1.01f;
-		//player->velocity = camera.Front * 200.0f;
-	}
-	else{ player->accel = -player->velocity * 1.0f; }
-//	camera.Position = player->position + glm::vec3(0.0f, 0.0f, 0.5f);
 	return true;
 }
 
