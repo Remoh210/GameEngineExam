@@ -43,13 +43,13 @@ public:
 	static int l_UpdateObject( lua_State *L );		// c function
 	
 
-	
+	std::map< std::string /*scriptName*/,
+		std::string /*scriptSource*/ > m_mapScripts;
 
 	cMeshObject* pMyGameObject;
 
 private:
-	std::map< std::string /*scriptName*/, 
-			  std::string /*scriptSource*/ > m_mapScripts;
+
 
 	static std::vector< cMeshObject* >* m_p_vecGOs;
 	// returns nullptr if not found

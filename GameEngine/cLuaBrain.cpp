@@ -394,10 +394,13 @@ int cLuaBrain::l_newCom(lua_State *L)
 
 	cMeshObject* targetObj;
 	if (targetFriendlyName != "")
+	{
 		targetObj = cLuaBrain::m_findObjectByFriendlyName(targetFriendlyName);
+	}
 	else
+	{
 		targetObj = nullptr;
-
+	}
 	
 	if (commandName == "Follow")
 	{
@@ -421,6 +424,12 @@ int cLuaBrain::l_newCom(lua_State *L)
 		vecInitValues.push_back(maxSpeed);
 		vecInitValues.push_back(TargetObject);
 		vecInitValues.push_back(Time);
+		if (script != "")
+		{
+			cMeshObject* lookAtObj = m_findObjectByFriendlyName(script);
+			sNVPair lookAtObject;			lookAtObject.pMeshObj = lookAtObj;
+			vecInitValues.push_back(lookAtObject);
+		}
 
 		newCommand->Initialize(vecInitValues);
 		commandGroup->vecCommands.push_back(newCommand);

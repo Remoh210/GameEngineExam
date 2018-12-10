@@ -32,6 +32,7 @@ private:
 	
 	cMeshObject* theObj;
 	cMeshObject* targetObj;
+	cMeshObject* LookAtObj;
 
 	bool b_Started;
 	bool m_bIsDone;

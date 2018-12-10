@@ -1,10 +1,14 @@
 --Create New group 
 newCG("Main")
 --Create New Command SubGroup
-newSubCG("Main", "cameratest")
---Create New commands and add it to existing command group to run them parallel
--- (Group Name, CommandName, objName, x, y, z, time, EaseIn from 0 to 1, EaseOut, Target Obj, ScriptName)
-newCom("cameratest", "MoveToEaseIO",  "camera", 0, 0, 0, 8, 0.3, 0.3, 0, "ship2", "small_factory")
+newSubCG("Main", "CameraToship")
+newCom("CameraToship", "MoveToEaseIO",  "camera", 0, 0, 0, 8, 0.14, 0.1, 0, "controlPoint1", "ship")
+
+newSubCG("Main", "Action")
+newCom("Action", "MoveToEaseIO",  "ship2", 0, 0, 0, 16, 0.14, 0.1, 0, "ship", "")
+newCom("Action", "Follow",  "camera", 8, 0, 50, 10, 3, 10, 20, "ship2", "ship")
+newCom("Action", "Trigger", "ship2", 0, 0, 0, 70, 0, 0, 0, "small_factory", "battle.lua")
+
 --newCom("PickUp_pockeball", "OrientTo",  "knight", 0, 0, 0, 7, 0, 0, 0, "pokeball", "")
 --Command group that will run After previous CG is finished
 --newSubCG("Main", "PrepareToThrow")
@@ -26,3 +30,5 @@ newCom("cameratest", "MoveToEaseIO",  "camera", 0, 0, 0, 8, 0.3, 0.3, 0, "ship2"
 --example of trigger command
 --where (..., ..., obj that we checking, x,y,z -trigger point (if no target object), radius, object-location trigger, script that will run)
 --newCom("Main", "Trigger",  "pokeball", 0, 0, 0, 50, 0, 0, 0, "ivysaur", "trig.lua")
+--Create New commands and add it to existing command group to run them parallel
+-- (Group Name, CommandName, objName, x, y, z, time, EaseIn from 0 to 1, EaseOut, Target Obj, ScriptName)

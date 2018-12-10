@@ -46,7 +46,7 @@ Texture0_name metal.bmp
 Texture0_strength 1
 Friendly_Name controlPoint1
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 10 93.25 18.75
 DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
@@ -57,7 +57,7 @@ IsWireFrame  0
 Textures:  0
 Friendly_Name controlPoint2
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 93.25 96.25 -150.5
 DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1

@@ -150,6 +150,28 @@ void key_callback( GLFWwindow* window,
 
 	}
 
+
+	if (key == GLFW_KEY_1 && action == GLFW_PRESS)
+	{
+
+
+		::p_LuaScripts->RunThis(::p_LuaScripts->m_mapScripts["example.lua"]);
+
+		::p_LuaScripts->UpdateCG(deltaTime);
+
+	}
+
+
+	if (key == GLFW_KEY_2 && action == GLFW_PRESS)
+	{
+
+
+		::p_LuaScripts->Update(deltaTime);
+
+		::p_LuaScripts->UpdateCG(deltaTime);
+
+	}
+
 	if (key == GLFW_KEY_8 && action == GLFW_PRESS)
 	{
 
@@ -385,6 +407,16 @@ void ProcessAsynKeys(GLFWwindow* window)
 		if ( glfwGetKey( window, GLFW_KEY_D ) ) { vec_pObjectsToDraw.at(index)->position.x += cameraSpeed; }
 		if ( glfwGetKey( window, GLFW_KEY_Q ) )	{ vec_pObjectsToDraw.at(index)->position.y -= cameraSpeed; }
 		if ( glfwGetKey( window, GLFW_KEY_E ) )	{ vec_pObjectsToDraw.at(index)->position.y += cameraSpeed; }
+
+
+
+
+		if (glfwGetKey(window, GLFW_KEY_SPACE)) 
+		{ 
+			std::cout << "x: " << vec_pObjectsToDraw.at(index)->position.x << " y: " << vec_pObjectsToDraw.at(index)->position.y << " z: " << vec_pObjectsToDraw.at(index)->position.y;
+			std::cout << std::endl;
+		}
+		
 
 		////Object Rotation
 		if (glfwGetKey(window, GLFW_KEY_RIGHT)) { 

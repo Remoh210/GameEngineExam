@@ -19,6 +19,9 @@ void cFollowObjectCommand::Initialize(std::vector<sNVPair> vecNVPairs)
 	this->maxSpeed = vecNVPairs[4].fValue;		
 	this->targetObj = vecNVPairs[5].pMeshObj;
 	this->time = vecNVPairs[6].fValue;
+	if (vecNVPairs.size() > 7) {
+		this->LookAtObj = vecNVPairs[7].pMeshObj;
+	}
 	this->b_Started = false;
 
 	return;
@@ -30,7 +33,16 @@ void cFollowObjectCommand::Update(double deltaTime)
 	{
 		this->b_Started = true;
 		this->initialTime = glfwGetTime();
-		this->initPosition = this->theObj->position;
+		if (this->theObj->friendlyName == "cameraObj")
+		{
+			this->initPosition = camera.Position;
+			this->theObj->position = camera.Position;
+		}
+		else
+		{
+			this->initPosition = this->theObj->position;
+		}
+		//this->initPosition = this->theObj->position;
 	}
 
 	this->elapsedTime = glfwGetTime() - this->initialTime;
@@ -66,7 +78,13 @@ void cFollowObjectCommand::Update(double deltaTime)
 	if (theObj->friendlyName == "cameraObj")
 	{
 		camera.Position = theObj->position;
-		camera.SetViewMatrix(glm::lookAt(camera.Position, this->targetObj->position, glm::vec3(0.0f, 1.0f, 0.0f)));
+		if (this->LookAtObj != nullptr) {
+			camera.SetViewMatrix(glm::lookAt(camera.Position, this->LookAtObj->position, glm::vec3(0.0f, 1.0f, 0.0f)));
+		}
+		else
+		{
+			camera.SetViewMatrix(glm::lookAt(camera.Position, this->targetObj->position, glm::vec3(0.0f, 1.0f, 0.0f)));
+		}
 		camera.b_controlledByScript = true;
 
 	}
