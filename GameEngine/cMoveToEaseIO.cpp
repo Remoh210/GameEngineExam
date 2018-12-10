@@ -31,7 +31,8 @@ void cMoveToEaseIO::Initialize(std::vector<sNVPair> vecNVPairs)
 
 	if (vecNVPairs[3].fValue != 0) this->AccRate = vecNVPairs[3].fValue;
 	if (vecNVPairs[4].fValue != 0) this->DecRate = vecNVPairs[4].fValue;
-	if (vecNVPairs[5].pMeshObj != nullptr) { this->finalPosition = vecNVPairs[5].pMeshObj->position; }
+	if (vecNVPairs[5].pMeshObj != NULL) { this->finalPosition = vecNVPairs[5].pMeshObj->position; }
+	if (this->objToMove->friendlyName == "cameraObj" && vecNVPairs.size() > 6) { this->camLookAtObj = vecNVPairs[6].pMeshObj; }
 
 	return;
 }
@@ -81,7 +82,14 @@ void cMoveToEaseIO::Update(double deltaTime)
 	else
 	{
 		this->objToMove->position += deltaPosition;
-		if (objToMove->friendlyName == "cameraObj") { camera.Position = objToMove->position; }
+		if (objToMove->friendlyName == "cameraObj") 
+		{ 
+			camera.b_controlledByScript = true;
+			camera.Position = objToMove->position; 
+			camera.SetViewMatrix(glm::lookAt(camera.Position, this->camLookAtObj->position, glm::vec3(0.0f, 1.0f, 0.0f)));
+		
+			
+		}
 	}
 
 	return;

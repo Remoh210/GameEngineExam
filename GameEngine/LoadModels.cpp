@@ -368,7 +368,7 @@ void LoadModelsIntoScene( std::vector<cMeshObject*> &vec_pObjectsToDraw )
 	//pPlayerSphere->accel = glm::vec3(0.0f, -5.0f, 0.0f);
 	pPlayerSphere->bIsUpdatedByPhysics = true;
 	pPlayerSphere->bIsDebug = true;
-
+	pPlayerSphere->bIsVisible = false;
 	pPlayerSphere->pDebugRenderer = ::g_pDebugRenderer;
 
 	//pTerrain->nonUniformScale = glm::vec3(0.1f,0.1f,0.1f);

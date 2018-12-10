@@ -452,6 +452,7 @@ int cLuaBrain::l_newCom(lua_State *L)
 	}
 	else if (commandName == "MoveToEaseIO")
 	{
+		
 		cMoveToEaseIO* newCommand = new cMoveToEaseIO();
 
 		std::vector<sNVPair> vecInitValues;
@@ -462,6 +463,8 @@ int cLuaBrain::l_newCom(lua_State *L)
 		sNVPair SlowDownIn;				SlowDownIn.fValue = x1;
 		sNVPair SlowDownOut;			SlowDownOut.fValue = y1;
 		sNVPair TargetObject;           TargetObject.pMeshObj = targetObj;
+	
+		
 
 		vecInitValues.push_back(ObjectToMove);
 		vecInitValues.push_back(Destination);
@@ -469,6 +472,12 @@ int cLuaBrain::l_newCom(lua_State *L)
 		vecInitValues.push_back(SlowDownIn);
 		vecInitValues.push_back(SlowDownOut);
 		vecInitValues.push_back(TargetObject);
+		if (script != "")
+		{
+			cMeshObject* lookAtObj = m_findObjectByFriendlyName(script);
+			sNVPair lookAtObject;			lookAtObject.pMeshObj = lookAtObj;
+			vecInitValues.push_back(lookAtObject);
+		}
 
 		newCommand->Initialize(vecInitValues);
 		commandGroup->vecCommands.push_back(newCommand);

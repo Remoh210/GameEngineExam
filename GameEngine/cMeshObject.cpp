@@ -7,9 +7,9 @@ cMeshObject::cMeshObject()
 
 	//	this->preRotation = glm::vec3(0.0f);
 	//	this->postRotation = glm::vec3(0.0f);
-	this->setMeshOrientationEulerAngles(glm::vec3(0.0f, 0.0f, 0.0f));
+	//this->setMeshOrientationEulerAngles(glm::vec3(0.0f, 0.0f, 0.0f));
 
-	//	this->m_meshQOrientation = glm::quat( glm::vec3(0.0f,0.0f,0.0f));
+	this->m_meshQOrientation = glm::quat( glm::vec3(0.0f,0.0f,0.0f));
 
 		// 
 	this->bIsDebug = false;

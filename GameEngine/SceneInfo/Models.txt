@@ -1,9 +1,42 @@
+Friendly_Name ship
+Mesh_Name ship.ply
+Position 142.75 94 -213.25
+DiffureRGB_Alpha  1 1 1 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 -0.709165 0 0.705007
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name ship2
+Mesh_Name ship.ply
+Position 20.75 88.5 -28.75
+DiffureRGB_Alpha  1 1 1 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 -0.947893 0 -0.318573
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name small_factory
+Mesh_Name small_factory.ply
+Position 139.75 90.75 -197.25
+DiffureRGB_Alpha  1 1 1 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 -0.713767 0 0.700288
+Scale  7 7 7
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
 Friendly_Name island1
 Mesh_Name island1.ply
 Position 0 0 0
-DiffureRGB_Alpha  1 1 1 1
+DiffureRGB_Alpha  0 0 0 1
 SpecularRGB_Power 1 1 1 100
-QuatXYZW_rotation 0 0 0 0
+QuatXYZW_rotation 0 0 0 1
 Scale  1 1 1
 IsVisible  1
 IsUpdByPhys  0
@@ -11,34 +44,221 @@ IsWireFrame  0
 Textures: 1
 Texture0_name metal.bmp
 Texture0_strength 1
-Friendly_Name island2
-Mesh_Name island2.ply
+Friendly_Name controlPoint1
+Mesh_Name Sphere_320.ply
 Position 0 0 0
-DiffureRGB_Alpha  1 1 1 1
+DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
-QuatXYZW_rotation 0 0 0 0
+QuatXYZW_rotation 0 0 0 1
 Scale  1 1 1
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
-Friendly_Name island3
-Mesh_Name island3.ply
+Friendly_Name controlPoint2
+Mesh_Name Sphere_320.ply
 Position 0 0 0
-DiffureRGB_Alpha  1 1 1 1
+DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
-QuatXYZW_rotation 0 0 0 0
+QuatXYZW_rotation 0 0 0 1
 Scale  1 1 1
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
-Friendly_Name island4
-Mesh_Name island4.ply
+Friendly_Name controlPoint3
+Mesh_Name Sphere_320.ply
 Position 0 0 0
-DiffureRGB_Alpha  1 1 1 1
+DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
-QuatXYZW_rotation 0 0 0 0
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint4
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint5
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint6
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint7
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint8
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint9
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint10
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint11
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name controlPoint12
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  1 0 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name projectile1
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  0 1 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name projectile2
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  0 1 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name projectile3
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  0 1 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name projectile4
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  0 1 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name projectile5
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  0 1 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name projectile6
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  0 1 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name projectile7
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  0 1 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
+Scale  1 1 1
+IsVisible  1
+IsUpdByPhys  0
+IsWireFrame  0
+Textures:  0
+Friendly_Name projectile8
+Mesh_Name Sphere_320.ply
+Position 0 0 0
+DiffureRGB_Alpha  0 1 0 1
+SpecularRGB_Power 1 1 1 100
+QuatXYZW_rotation 0 0 0 1
 Scale  1 1 1
 IsVisible  1
 IsUpdByPhys  0

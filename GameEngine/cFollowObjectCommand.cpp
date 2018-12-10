@@ -84,7 +84,7 @@ bool cFollowObjectCommand::isFinished(void)
 {
 	if (this->m_bIsDone) { 
 
-		 camera.b_controlledByScript = false; 
+		// camera.b_controlledByScript = false; 
 		 return true;
 	}
 	else { return false; }

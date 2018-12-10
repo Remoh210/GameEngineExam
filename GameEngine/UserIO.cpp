@@ -124,7 +124,7 @@ void key_callback( GLFWwindow* window,
 			index = index + 1;
 		}
 		else { index = 0; }
-		std::cout << "Model " << vec_pObjectsToDraw.at(index)->meshName << " is Chosen" << std::endl;
+		std::cout << "Model " << vec_pObjectsToDraw.at(index)->friendlyName << " is Chosen" << std::endl;
 	}
 
 
@@ -263,8 +263,8 @@ bool AreAllModifiersUp(GLFWwindow* window)
 
 void ProcessAsynKeys(GLFWwindow* window)
 {
-	const float CAMERA_SPEED_SLOW = 5.0f;
-	const float CAMERA_SPEED_FAST = 10.0f;
+	const float CAMERA_SPEED_SLOW = 0.25f;
+	const float CAMERA_SPEED_FAST = 1.5f;
 
 	// WASD + q = "up", e = down		y axis = up and down
 	//									x axis = left and right
@@ -387,8 +387,10 @@ void ProcessAsynKeys(GLFWwindow* window)
 		if ( glfwGetKey( window, GLFW_KEY_E ) )	{ vec_pObjectsToDraw.at(index)->position.y += cameraSpeed; }
 
 		////Object Rotation
-		if (glfwGetKey(window, GLFW_KEY_RIGHT)) { vec_pObjectsToDraw.at(index)->adjMeshOrientationEulerAngles(0.0f, 0.1f, 0.0f, false); }
-		if (glfwGetKey(window, GLFW_KEY_LEFT)) {vec_pObjectsToDraw.at(index)->adjMeshOrientationEulerAngles(0.0f, -0.1f, 0.0f, false);}
+		if (glfwGetKey(window, GLFW_KEY_RIGHT)) { 
+			vec_pObjectsToDraw.at(index)->adjMeshOrientationEulerAngles(glm::vec3(0.0f, 0.05f, 0.0f), true);
+		}
+		if (glfwGetKey(window, GLFW_KEY_LEFT)) {vec_pObjectsToDraw.at(index)->adjMeshOrientationEulerAngles(0.0f, -0.05f, 0.0f, false);}
 		//if ( glfwGetKey( window, GLFW_KEY_UP ) )	{ vec_pObjectsToDraw.at(index)->postRotation.x += 0.1f; }
 		//if ( glfwGetKey( window, GLFW_KEY_DOWN ) )	{ vec_pObjectsToDraw.at(index)->postRotation.x -= 0.1f; }
 		//if ( glfwGetKey( window, GLFW_KEY_X ) )		{ vec_pObjectsToDraw.at(index)->postRotation.z += 0.1f; }
