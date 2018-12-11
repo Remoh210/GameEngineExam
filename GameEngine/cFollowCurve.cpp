@@ -92,6 +92,7 @@ void cFollowCurve::Update(double deltaTime)
 
 	if (this->b_Started == false)
 	{
+		if (theObj->bIsVisible == false) { theObj->bIsVisible = true; }
 		this->initialTime = glfwGetTime();
 		this->b_Started = true;
 		this->initPosition = this->theObj->position;
