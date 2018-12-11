@@ -65,6 +65,7 @@ void key_callback( GLFWwindow* window,
 	//SAVE MODELS
 	if (key == GLFW_KEY_G && action == GLFW_PRESS)
 	{
+		camera.b_controlledByScript = false;
 		//saveModelInfo("Models2.txt", vec_pObjectsToDraw);
 		//saveLightInfo("lights.txt", LightManager->vecLights);
 	}
@@ -162,13 +163,11 @@ void key_callback( GLFWwindow* window,
 	}
 
 
-	if (key == GLFW_KEY_2 && action == GLFW_PRESS)
+	if (key == GLFW_KEY_4 && action == GLFW_PRESS)
 	{
 
 
-		::p_LuaScripts->Update(deltaTime);
-
-		::p_LuaScripts->UpdateCG(deltaTime);
+		::p_LuaScripts->RunThis(::p_LuaScripts->m_mapScripts["fire.lua"]);
 
 	}
 
@@ -176,9 +175,9 @@ void key_callback( GLFWwindow* window,
 	{
 
 
-		::p_LuaScripts->Update(deltaTime);
+		//::p_LuaScripts->Update(deltaTime);
 
-		::p_LuaScripts->UpdateCG(deltaTime);
+		//::p_LuaScripts->UpdateCG(deltaTime);
 		
 	}
 	
@@ -285,7 +284,7 @@ bool AreAllModifiersUp(GLFWwindow* window)
 
 void ProcessAsynKeys(GLFWwindow* window)
 {
-	const float CAMERA_SPEED_SLOW = 0.25f;
+	const float CAMERA_SPEED_SLOW = 0.05f;
 	const float CAMERA_SPEED_FAST = 1.5f;
 
 	// WASD + q = "up", e = down		y axis = up and down
@@ -413,7 +412,7 @@ void ProcessAsynKeys(GLFWwindow* window)
 
 		if (glfwGetKey(window, GLFW_KEY_SPACE)) 
 		{ 
-			std::cout << "x: " << vec_pObjectsToDraw.at(index)->position.x << " y: " << vec_pObjectsToDraw.at(index)->position.y << " z: " << vec_pObjectsToDraw.at(index)->position.y;
+			std::cout << "x: " << vec_pObjectsToDraw.at(index)->position.x << " y: " << vec_pObjectsToDraw.at(index)->position.y << " z: " << vec_pObjectsToDraw.at(index)->position.z;
 			std::cout << std::endl;
 		}
 		

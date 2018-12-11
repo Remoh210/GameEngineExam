@@ -341,6 +341,7 @@ int main(void)
 	::p_LuaScripts->SetObjectVector(&(::vec_pObjectsToDraw));
 
 	::p_LuaScripts->LoadScriptFile("example.lua");
+	::p_LuaScripts->LoadScriptFile("fire.lua");
 
 
 

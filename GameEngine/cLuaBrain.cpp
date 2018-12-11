@@ -3,6 +3,7 @@
 #include "cMoveToCommand.h"
 #include "cMoveToEaseIO.h"
 #include "cFollowCurve.h"
+#include "cWait.h"
 #include "cOrientTo.h"
 #include "cTriggerCommand.h"
 #include "Camera.h"
@@ -495,6 +496,26 @@ int cLuaBrain::l_newCom(lua_State *L)
 			sNVPair lookAtObject;			lookAtObject.pMeshObj = lookAtObj;
 			vecInitValues.push_back(lookAtObject);
 		}
+
+		newCommand->Initialize(vecInitValues);
+		commandGroup->vecCommands.push_back(newCommand);
+	}
+	else if (commandName == "Wait")
+	{
+
+		cWait* newCommand = new cWait();
+
+		std::vector<sNVPair> vecInitValues;
+
+		sNVPair TimeToWait;			TimeToWait.fValue = time;
+
+		sNVPair down;		down.fValue = x;
+		sNVPair upper;      upper.fValue = y;
+
+		vecInitValues.push_back(TimeToWait);
+		vecInitValues.push_back(down);
+		vecInitValues.push_back(upper);
+
 
 		newCommand->Initialize(vecInitValues);
 		commandGroup->vecCommands.push_back(newCommand);

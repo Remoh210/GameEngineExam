@@ -178,88 +178,88 @@ IsWireFrame  0
 Textures:  0
 Friendly_Name projectile1
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 92.75 97.05 -139.4
 DiffureRGB_Alpha  0 1 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
-Scale  1 1 1
+Scale  0.2 0.2 0.2
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
 Friendly_Name projectile2
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 92.3 97 -139.65
 DiffureRGB_Alpha  0 1 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
-Scale  1 1 1
+Scale  0.2 0.2 0.2
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
 Friendly_Name projectile3
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 91.95 97 -140.05
 DiffureRGB_Alpha  0 1 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
-Scale  1 1 1
+Scale  0.2 0.2 0.2
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
 Friendly_Name projectile4
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 91.5 97 -140.25
 DiffureRGB_Alpha  0 1 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
-Scale  1 1 1
+Scale  0.2 0.2 0.2
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
 Friendly_Name projectile5
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 97.6998 97.5 -149.3
 DiffureRGB_Alpha  0 1 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
-Scale  1 1 1
+Scale  0.2 0.2 0.2
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
 Friendly_Name projectile6
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 98.04 97.5 -149
 DiffureRGB_Alpha  0 1 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
-Scale  1 1 1
+Scale  0.2 0.2 0.2
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
 Friendly_Name projectile7
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 98.64 97.5 -148.95
 DiffureRGB_Alpha  0 1 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
-Scale  1 1 1
+Scale  0.2 0.2 0.2
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0
 Textures:  0
 Friendly_Name projectile8
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 99 97.65 -148.55
 DiffureRGB_Alpha  0 1 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
-Scale  1 1 1
+Scale  0.2 0.2 0.2
 IsVisible  1
 IsUpdByPhys  0
 IsWireFrame  0

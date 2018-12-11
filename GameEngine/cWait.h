@@ -19,6 +19,8 @@ private:
 
 	float m_timeWaitedSoFar;
 	float m_timeToWait;
+	int upper;
+	int down;
 };
 
 
