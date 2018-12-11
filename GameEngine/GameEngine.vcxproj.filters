@@ -326,4 +326,9 @@
       <Filter>Scripting\LuaScripts</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="SceneInfo\Models.txt">
+      <Filter>Scripting\cCommands\Other</Filter>
+    </Text>
+  </ItemGroup>
 </Project>
