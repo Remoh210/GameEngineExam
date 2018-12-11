@@ -16,6 +16,7 @@ public:
 private:
 	cMeshObject* theObj;
 	cMeshObject* targetObj;
+	cMeshObject* camLookAtObj;
 
 	glm::vec3 initPosition;
 	glm::vec3 prevPosition;

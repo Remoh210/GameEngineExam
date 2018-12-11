@@ -1,7 +1,8 @@
 --newCG("battle")
 --newSubCG("battle", "MoveToShip1")
-newCom("Main", "MoveToEaseIO",  "ship", 0, 0, 0, 6, 0.3, 0.3, 0, "ship2", "")
-newCom("Main", "OrientTo",  "ship", 0, 0, 0, 1, 0, 0, 0, "ship2", "")
+newCom("Main", "MoveToEaseIO",  "ship", 0, 0, 0, 10, 0.3, 0.3, 0, "controlPoint3", "")
+newCom("Main", "OrientTo",  "ship", 0, 0, 0, 1, 0, 0, 0, "controlPoint3", "")
+--newCom("Main", "Trigger",  "ship", 0, 0, 0, 30, 0, 0, 0, "controlPoint3", "prep_to_battle.lua")
 
 --newSubCG("Triggered", "NextRunPoint")
 --newCom("NextRunPoint", "MoveToEaseIO",  "ivysaur", 0, 0, 0, 6, 0.3, 0.3, 0, "AxePainted", "")

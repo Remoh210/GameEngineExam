@@ -316,7 +316,10 @@
     <None Include="assets\scripts\example.lua">
       <Filter>Scripting\LuaScripts</Filter>
     </None>
-    <None Include="assets\scripts\battle.lua">
+    <None Include="assets\scripts\DeffenceTrigger.lua">
+      <Filter>Scripting\LuaScripts</Filter>
+    </None>
+    <None Include="assets\scripts\prep_to_battle.lua">
       <Filter>Scripting\LuaScripts</Filter>
     </None>
   </ItemGroup>

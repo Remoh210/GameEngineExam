@@ -234,7 +234,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\scripts\example.lua" />
-    <None Include="assets\scripts\battle.lua" />
+    <None Include="assets\scripts\DeffenceTrigger.lua" />
+    <None Include="assets\scripts\prep_to_battle.lua" />
     <None Include="assets\shaders\fragment01.glsl" />
     <None Include="assets\shaders\vertex01.glsl" />
   </ItemGroup>

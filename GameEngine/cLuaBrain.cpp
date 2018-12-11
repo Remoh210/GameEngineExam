@@ -456,6 +456,14 @@ int cLuaBrain::l_newCom(lua_State *L)
 		vecInitValues.push_back(Time);
 		vecInitValues.push_back(TargetObj);
 
+		if (script != "")
+		{
+			cMeshObject* lookAtObj = m_findObjectByFriendlyName(script);
+			sNVPair lookAtObject;			lookAtObject.pMeshObj = lookAtObj;
+			vecInitValues.push_back(lookAtObject);
+		}
+
+
 		newCommand->Initialize(vecInitValues);
 		commandGroup->vecCommands.push_back(newCommand);
 	}

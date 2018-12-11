@@ -72,6 +72,7 @@ void cFollowCurve::Initialize(std::vector<sNVPair> vecNVPairs)
 	this->finalPosition = vecNVPairs[2].v3Value;
 	this->time = vecNVPairs[3].fValue;
 	this->targetObj = vecNVPairs[4].pMeshObj;
+	if (this->theObj->friendlyName == "cameraObj" && vecNVPairs.size() > 5) { this->camLookAtObj = vecNVPairs[5].pMeshObj; }
 
 	if (this->targetObj != nullptr) { this->finalPosition = this->targetObj->position; }
 
@@ -94,6 +95,11 @@ void cFollowCurve::Update(double deltaTime)
 		this->initialTime = glfwGetTime();
 		this->b_Started = true;
 		this->initPosition = this->theObj->position;
+		if (theObj->friendlyName == "cameraObj")
+		{
+			this->theObj->position = camera.Position;
+			this->initPosition = this->theObj->position;
+		}
 		this->prevPosition = this->initPosition;
 	}
 
@@ -141,9 +147,9 @@ void cFollowCurve::Update(double deltaTime)
 	if (theObj->friendlyName == "cameraObj") 
 	{
 		camera.Position = theObj->position; 
+		camera.SetViewMatrix(glm::lookAt(camera.Position, this->camLookAtObj->position, glm::vec3(0.0f, 1.0f, 0.0f)));
 	}
 	
-
 
 
 	return;

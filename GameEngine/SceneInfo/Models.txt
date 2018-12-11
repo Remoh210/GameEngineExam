@@ -46,7 +46,7 @@ Texture0_name metal.bmp
 Texture0_strength 1
 Friendly_Name controlPoint1
 Mesh_Name Sphere_320.ply
-Position 10 93.25 18.75
+Position 9.5 93.25 18.75
 DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
@@ -57,7 +57,7 @@ IsWireFrame  0
 Textures:  0
 Friendly_Name controlPoint2
 Mesh_Name Sphere_320.ply
-Position 93.25 96.25 -150.5
+Position 95.5 96.25 -134.75
 DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
@@ -68,7 +68,7 @@ IsWireFrame  0
 Textures:  0
 Friendly_Name controlPoint3
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 111 97 -151.5
 DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
@@ -79,7 +79,7 @@ IsWireFrame  0
 Textures:  0
 Friendly_Name controlPoint4
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 63.25 95 -157.5
 DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
@@ -90,7 +90,7 @@ IsWireFrame  0
 Textures:  0
 Friendly_Name controlPoint5
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 134.75 96.25 -123.75
 DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1
@@ -101,7 +101,7 @@ IsWireFrame  0
 Textures:  0
 Friendly_Name controlPoint6
 Mesh_Name Sphere_320.ply
-Position 0 0 0
+Position 107.5 96 -139
 DiffureRGB_Alpha  1 0 0 1
 SpecularRGB_Power 1 1 1 100
 QuatXYZW_rotation 0 0 0 1

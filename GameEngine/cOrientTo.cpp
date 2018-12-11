@@ -41,7 +41,7 @@ void cOrientTo::Update(double deltaTime)
 
 		this->lookDirection = glm::normalize(this->lookDirection);
 
-		this->finalOrientation = glm::inverse(glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), -this->lookDirection, this->Up));
+		this->finalOrientation = glm::inverse(glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), this->lookDirection, this->Up));
 
 		this->initOrientation = this->theObj->getQOrientation();
 

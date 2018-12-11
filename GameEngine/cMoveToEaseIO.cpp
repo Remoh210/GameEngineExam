@@ -48,6 +48,7 @@ void cMoveToEaseIO::Update(double deltaTime)
 		this->b_first = true;
 		if (this->objToMove->friendlyName == "cameraObj")
 		{
+			this->objToMove->position = camera.Position;
 			this->initPosition = camera.Position;
 		}
 		else
